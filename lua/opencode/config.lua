@@ -45,13 +45,13 @@ local defaults = {
   server = {
     port = nil,
     start = function()
-      require("opencode.terminal").start("opencode --port")
+      require("opencode.terminal").start("opencode --port --continue")
     end,
     stop = function()
       require("opencode.terminal").stop()
     end,
     toggle = function()
-      require("opencode.terminal").toggle("opencode --port")
+      require("opencode.terminal").toggle("opencode --port --continue")
     end,
   },
   -- stylua: ignore
